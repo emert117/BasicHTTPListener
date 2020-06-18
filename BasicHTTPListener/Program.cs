@@ -42,15 +42,7 @@ namespace BasicHTTPListener
                 Console.WriteLine($"Recived request for {request.Url}");
                 Console.WriteLine(documentContents);
                 Console.WriteLine("------------------------------------------");
-
-                // todo: send a respone if specified in config file
-                //HttpListenerResponse response = context.Response;
-                //string responseString = $"<HTML><BODY> Response Time : {DateTime.Now.ToString()}</BODY></HTML>";
-                //byte[] buffer = Encoding.UTF8.GetBytes(responseString);
-                //response.ContentLength64 = buffer.Length;
-                //Stream output = response.OutputStream;
-                //output.Write(buffer, 0, buffer.Length);
-                //output.Close();
+               
             }
             listener.Stop();
         }
